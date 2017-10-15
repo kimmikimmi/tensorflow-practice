@@ -22,7 +22,7 @@ hypothesis = W * X + b
 # mean(h - Y)^2 : 예측값과 실제값의 거리를 비용(손실) 함수로 정합니다.
 cost = tf.reduce_mean(tf.square(hypothesis - Y))
 # 텐서플로우에 기본적으로 포함되어 있는 함수를 이용해 경사 하강법 최적화를 수행합니다.
-optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
+optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.03)
 # 비용을 최소화 하는 것이 최종 목표
 train_op = optimizer.minimize(cost)
 
